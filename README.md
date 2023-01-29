@@ -1,4 +1,4 @@
-# smart-contract-winner
+# Smart Contract Winner
 Week 4 Alchemy University exercise involving the creation and deployment of contracts in hardhat.
 
 ## Instructions

@@ -23,3 +23,26 @@ contract Contract {
 }
 ```
 How do we possibly make it so the tx.origin (the EOA who originated the transaction) is not equal to the msg.sender? 
+
+## Creating the project
+Create a Node project:
+        
+    npm init -y
+
+Install dependencies:
+
+    npm install --save-dev hardhat
+    npm install @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers dotenv
+
+Create a Hardhat empty project
+
+    npx hardhat
+    > Create an empty hardhat.config.js
+
+Create contract, test and .env files
+
+    touch .env
+    mkdir contracts
+    touch contracts/Winner.sol
+    mkdir test
+    touch test/winner.test.js

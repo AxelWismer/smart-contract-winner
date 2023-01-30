@@ -10,7 +10,8 @@ Your goal is simple! Emit the winner event on this smart contract on the Goerli 
 
 If you take a look at the Code tab in Etherscan, you'll see that the source code for this contract looks like this:
 
-```solidity// SPDX-License-Identifier: Unlicense
+```solidity
+// SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
 contract Contract {
@@ -46,3 +47,17 @@ Create contract, test and .env files
     touch contracts/Winner.sol
     mkdir test
     touch test/winner.test.js
+
+## Deploy the project
+    
+    npx hardhat run scripts/deploy.js
+
+Result: "Winner address: 0xd5A07197eB1fc60cE2eC2b3C996a257a2701A9a9"
+
+## Create the winner event
+
+    npx hardhat run scripts/createEvent.js
+
+## Final result: 
+Transaction: [0xb1622774814b26cb16f65db52acde1c5cf3a58660994e692585d46e4d033c325](
+https://goerli.etherscan.io/tx/0xb1622774814b26cb16f65db52acde1c5cf3a58660994e692585d46e4d033c325)

@@ -2,7 +2,11 @@
 pragma solidity ^0.8.0;
 
 interface IContract {
-    event Winner(address);
-
     function attempt() external;
+}
+
+contract Winner {
+    function winAttempt(address cont) external {
+        IContract(cont).attempt();
+    } 
 }
